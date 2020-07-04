@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="Ch1rag"/>
+    <parameter name="searchText" value="65 inch TV"/>
+    <parameter name="username" value="chiragm.3315@gmail.com"/>
+    <classes>
+      <class name="tests.PurchaseTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="purchaseFlowTest" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.PurchaseTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
